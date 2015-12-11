@@ -1,0 +1,578 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+class musicQuiz {
+public:
+	int onechoice1;
+	int onechoice2;
+	int onechoice3;
+	int twochoice1;
+	int twochoice2;
+	int twochoice3;
+	int twochoice4;
+	int twochoice5;
+	int twochoice6;
+	int twochoice7;
+	int twochoice8;
+	int twochoice9;
+	int x;
+	int twochoice10;
+	int twoscore;
+	string name;
+	string crush;
+	string band;
+	int hellyeah;
+	int sun;
+	int dog;
+	int bouncer;
+	string pal;
+	int crushdecision1;
+	int meetBand;
+	int startDay;
+	int ruReady;
+	int toVom;
+
+
+	musicQuiz() {
+	}
+
+	//functions
+	void quizOne() {
+		int onechoice1;
+		int onechoice2;
+		int onechoice3;
+		cout << " Please choose a number for each answer." << endl;
+		cout << "Are you (1) happy, (2) sad, or (3) #lit? " << endl;
+		cin >> onechoice1;
+		if (onechoice1 == 1){
+			cout << " Which of these artists do you know? " << endl;
+			cout << " (1)The Doors, (2) Passion Pit, (3) Haim ? " << endl;
+			cin >> onechoice2;
+			if (onechoice2 == 1){
+				cout << "Which of the three is your favorite?" << endl;
+				cout << " (1) Jimi Hendrix, (2) The Rolling Stones, (3) Janis Joplin ?" << endl;
+				cin >> onechoice3;
+				if (onechoice3 == 1){
+					cout << "Your recommendation is Sunshine of Your Love by Cream" << endl;
+				}
+				else if (onechoice3 == 2){
+					cout << "Your recommendation is My Generation by the Who" << endl;
+				}
+				else if (onechoice3 == 3){
+					cout << "Your recommendation is On The Road Again by Canned Heat" << endl;
+				}
+			}
+			else if (onechoice2 == 2){
+				cout << "Which of the three is your favorite?" << endl;
+				cout << " (1) MGMT, (2) Tegan and Sara, (3) Vampire Weekend ?" << endl;
+				cin >> onechoice3;
+				if (onechoice3 == 1){
+					cout << "Your song recommendation is Sleepwalking by Modest Mouse" << endl;
+				}
+				else if (onechoice3 == 2){
+					cout << "Your song recommendation is Strawberry Blond by Mitski" << endl;
+				}
+				else if (onechoice3 == 3){
+					cout << "Your song recommendation is Awkward Kisser by Telekinesis" << endl;
+				}
+			}
+			else if (onechoice2 == 3){
+				cout << "Which of the three is your favorite?" << endl;
+				cout << " (1) Grouplove, (2) The 1975, (3) Best Coast ?" << endl;
+				cin >> onechoice3;
+				if (onechoice3 == 1){
+					cout << "Your song recommendation is Out Of My League by Fitz and The Tantrums " << endl;
+				}
+				else if (onechoice3 == 2){
+					cout << "Your song recommendation is Anna Sun by Walk The Moon" << endl;
+				}
+				else if (onechoice3 == 3){
+					cout << "Your song recommendation is Wishing Well by Screaming Females " << endl;
+				}
+			}
+		}
+		else if (onechoice1 == 2){
+			cout << "Which of these artists do you know?" << endl;
+			cout << " (1) The Gaslight Anthem, (2) Taylor Swift, (3) The Front Bottoms ?" << endl;
+			cin >> onechoice2;
+			if (onechoice2 == 1){
+				cout << "Which of the three is your favorite?" << endl;
+				cout << " (1) Against Me!, (2) The Menzingers, (3) American Football?" << endl;
+				cin >> onechoice3;
+				if (onechoice3 == 1){
+					cout << "Your song recommendation is Metropole by The Lawrence Arms " << endl;
+				}
+				else if (onechoice3 == 2){
+					cout << "Your song recommendation is Don't Make Me Go by Off With Their Heads" << endl;
+				}
+				else if (onechoice3 == 3){
+					cout << "Your song recommendation is Spraypaint by Skin Cells " << endl;
+				}
+			}
+			else if (onechoice2 == 2){
+				cout << "Which of the three is your favorite?" << endl;
+				cout << " (1) Miley Cyrus, (2) Kelly Clarkson, (3) Carrie Underwood?" << endl;
+				cin >> onechoice3;
+				if (onechoice3 == 1){
+					cout << " Your song recommendation is Thinking of You by Katy Perry. " << endl;
+				}
+				else if (onechoice3 == 2){
+					cout << "Your song recommendation is She Will Be Loved by Maroon 5." << endl;
+				}
+				else if (onechoice3 == 3){
+					cout << "Your song recommendation is Heartaches By The Number by Guy Mitchell" << endl;
+				}
+			}
+			else if (onechoice2 == 3){
+				cout << "Which of the three is your favorite?" << endl;
+				cout << " (1) Title Fight, (2) Joyce Manor, (3) Waxahatchee ?" << endl;
+				cin >> onechoice3;
+				if (onechoice3 == 1){
+					cout << " Your song recommendation is Never Saw It Coming by Tigers Jaw " << endl;
+				}
+				else if (onechoice3 == 2){
+					cout << "Your song recommendation is Pothole by Modern Baseball" << endl;
+				}
+				else if (onechoice3 == 3){
+					cout << "Your song recommendation is Nervous Rex by Laura Stevenson" << endl;
+				}
+			}
+		}
+		else if (onechoice1 == 3){
+			cout << "Which of these artists do you know? " << endl;
+			cout << " (1) Drake, (2) Two Door Cinema Club, (3)Descendents ? " << endl;
+			cin >> onechoice2;
+			if (onechoice2 == 1){
+				cout << "Which of the three is your favorite?" << endl;
+				cout << "(1) Earl Sweatshirt, (2) Future, (3) Tyler, The Creator ?" << endl;
+				cin >> onechoice3;
+				if (onechoice3 == 1){
+					cout << "Your song recommendation is Favorite Song by Chance The Rapper." << endl;
+				}
+				else if (onechoice3 == 2){
+					cout << "Your song recommendation is We Own It by 2 Chainz." << endl;
+				}
+				else if (onechoice3 == 3){
+					cout << "Your song recommendation is Sweatpants by Childish Gambino." << endl;
+				}
+			}
+			else if (onechoice2 == 2){
+				cout << "Which of the three is your favorite?" << endl;
+				cout << "(1) The xx, (2) The Strokes, (3) The Wombats ?" << endl;
+				cin >> onechoice3;
+				if (onechoice3 == 1){
+					cout << "Your song recommendation is Midnight City by M83 " << endl;
+				}
+				else if (onechoice3 == 2){
+					cout << "Your song recommendation is R U Mine? by Arctic Monkeys." << endl;
+				}
+				else if (onechoice3 == 3){
+					cout << "Your song recommendation is Chelsea Dagger by The Fratellis." << endl;
+				}
+			}
+			else if (onechoice2 == 3){
+				cout << "Which of the three is your favorite?" << endl;
+				cout << "(1) Weezer , (2) Jawbreaker  , (3)The Runaways  ?" << endl;
+				cin >> onechoice3;
+				if (onechoice3 == 1){
+					cout << "Your song recommendation is My Own Worst Enemy by the most LIT band of all time" << endl;
+					cout << "YOU WIN MUSIC #SO #LIT" << endl;
+				}
+				else if (onechoice3 == 2){
+					cout << "Your song recommendation is Cool Kids by Screeching Weasel ? " << endl;
+				}
+				else if (onechoice3 == 3){
+					cout << "Your song recommendation is Black Hills by Cayetana " << endl;
+				}
+			}
+		}
+	}
+
+	void quizTwo() {
+		int twochoice1;
+		int twochoice2;
+		int twochoice3;
+		int twochoice4;
+		int twochoice5;
+		int twochoice6;
+		int twochoice7;
+		int twochoice8;
+		int twochoice9;
+		int x;
+		int twochoice10;
+		int twoscore;
+
+		cout << "Pick a number." << endl;
+		cout << "How many days a week do you wear black?" << endl;
+		cin >> twochoice1;
+
+		cout << "How many LP's do you own?" << endl;
+		cout << "(1)0-9, (2) 10-49, (3)50+" << endl;
+		cin >> twochoice2;
+
+		cout << "How many pairs of Converse have you gone through?" << endl;
+		cout << "(1)0-4, (2)5-9, (3)10+" << endl;
+		cin >> twochoice3;
+
+		cout << "How many concerts have you been to this week?" << endl;
+		cout << "(1)0-1, (2)2-3, (3) 3+" << endl;
+		cin >> twochoice4;
+
+		cout << "One a scale of 0 to 10 how much do you like to mosh?" << endl;
+		cout << "(Choose 11 if currently moshing)" << endl;
+		cin >> twochoice5;
+
+		cout << "How old were you when you started listening to Jawbreaker?" << endl;
+		cout << "(0) 'Whose Jawbreaker?' (1) in the womb (2) 0-12 (3) 13-17 (4) 17+" << endl;
+		cin >> twochoice6;
+
+		cout << "How many bands are you in? " << endl;
+		cout << "(1)0-1, (2)2-3, (3) 3+" << endl;
+		cin >> twochoice7;
+
+		cout << "How many songs less than a minute do you know?" << endl;
+		cout << "(1)0-4, (2)5-9, (3)10+" << endl;
+		cin >> twochoice8;
+
+		cout << "How many tours have you been on? " << endl;
+		cout << "(1)0-1, (2)2-3, (3) 3+" << endl;
+		cin >> twochoice9;
+
+		cout << "Pick 1 or 2." << endl;
+		cout << "(1)Bernie or (2)Trump?" << endl;
+		cin >> x;
+		if (x == 1){
+			twochoice10 = 4;
+		}
+		else{
+			twochoice10 = -100;
+		}
+
+		twoscore = twochoice1 + twochoice2 + twochoice3 + twochoice4 + twochoice5 + twochoice6 + twochoice7 + twochoice8 + twochoice9 + twochoice10;
+		if (twoscore >= -94 && twoscore < 15){
+			cout << "You can't get on the guest list." << endl;
+			cout << "...But in reality it doesn't matter what you like or what you wear. We're all punk at heart. <3 " << endl;
+		}
+		else if (twoscore >= 15 && twoscore < 30){
+			cout << "You might have paid too much for your 60th pressing of I Don't Want to Grow Up but at least you've got some taste. You're on the right path but definitely not with the right shoes. " << endl;
+			cout << "...But in reality it doesn't matter what you like or what you wear. We're all punk at heart. <3 " << endl;
+		}
+		else{
+			cout << "Wow. Are you sure you're not Joey Ramone? You are the epitome of punx. " << endl;
+			cout << "I bet you saw Black Flag play unreleased demos in you buddy Tommy's basement as his mom made pizza rolls upstairs. " << endl;
+			cout << "...But in reality it doesn't matter what you like or what you wear. We're all punk at heart. <3 " << endl;
+		}
+	}
+
+	void RPG() {
+		string name;
+		string crush;
+		string pal;
+		string band;
+		int hellyeah;
+		int dog;
+		int sun;
+		int bouncer;
+		int crushdecision1;
+		int meetBand;
+		int startDay;
+		int ruReady;
+		int toVom;
+
+		cout << "What's up punk?! Are you ready to go to the tightest gig of all time?" << endl;
+		cout << "Come join us for the adventure of a lifetime?" << endl;
+		cout << "Can I have a HELL YEAH or a HELL DOUBLE YEAH?" << endl;
+		cout << "Press 1 for HELL YEAH" << endl;
+		cout << "Press 2 for HELL DOUBLE YEAH" << endl;
+		cin >> hellyeah;
+		cout << "Let's create your punk persona haha yeah man. " << endl;
+		cout << "What would you like us to call you?" << endl;
+		cin >> name;
+		cout << "What's your favorite band?" << endl;
+		cin >> band;
+		cout << "What's your best friend's name?" << endl;
+		cin >> pal;
+		cout << "What's your crush's name?" << endl;
+		cin >> crush;
+		cout << "Do you like dogs?" << endl;
+		cout << "Press 1 for yes." << endl;
+		cout << "Press 2 for no." << endl;
+		cin >> dog;
+		if (dog == 2){
+			cout << "...okay...anyway..." << endl;
+		}
+		cout << "Punk-o-rama here we come!" << endl;
+		cout << "Your day is beginning." << endl;
+		cout << "Is the sun up or down?" << endl;
+		cout << "Press 1 for up." << endl;
+		cout << "Press 2 for down." << endl;
+		cin >> sun;
+		if (sun == 1) {
+			cout << "8 AM?! What are you doing up?" << endl;
+			cout << "That’s not v punk of you honestly… but whatever." << endl;
+			cout << "Guess it’s time to get ready." << endl;
+			cout << "You shower, you brush your teeth, you take care of all the wannabe punk things you do before you leave the house in the morning." << endl;
+			cout << "You put on your favorite Foxtrot Double Layer Bernies band shirt because you know " << crush << " will think you’re super tite for wearing it." << endl;
+			cout << "You have the whole day in front of you. Guess it’s time to get stuff done." << endl;
+			cout << "What would you like to do?" << endl;
+			cout << "Press 1 to practice with your band." << endl;
+			cout << "Press 2 to tweet about how much the new Dead Zeppelin album reeks." << endl;
+			cin >> startDay;
+			if (startDay == 1){
+				cout << "Hey, practice has gone great. Not as great as you hoped but… not too bad." << endl;
+				cout << "The song you wrote for_” << crush << “ came out so mega lo-fi hi-flac that they will just melt when they hear it." << endl;
+				cout << "It even has a verse about the first time you saw them… how original. You two so deserve each other. Fo real." << endl;
+				cout << "All right don’t get nervous or anything but it’s just about time to leave for the show." << endl;
+				cout << "Are you ready to see both " << crush << " and your favorite band of all time " << band << "?!?!" << endl;
+				cout << "Press 1 for oh boy yeah." << endl;
+				cout << "Press 2 for I think I’ve changed my mind." << endl;
+				cin >> ruReady;
+				if (ruReady == 1){
+					cout << "GREAT LET’S GO MOSH." << endl;
+				}
+				else{
+					cout << "TOO BAD, WE’RE GOING ANYWAY." << endl;
+				}
+				cout << "You’re about to roll up to the show, ticket in hand, and you see " << pal << "." << endl;
+				cout << "They say: Hey, " << name << " guess who's here already?! Yo crush!!11!!1" << endl;
+				cout << "You’re panicking. But you’re pumped. You to tell " << pal << " about the new song you wrote for your crush." << endl;
+				cout << "Oh boy here they come…" << endl;
+				cout << "They say: Hey " << name << " what's up?" << endl;
+				cout << "What do you do?" << endl;
+				cout << "Pick 1 to vomit on one’s self." << endl;
+				cout << "Pick 2 to play it supah cool." << endl;
+				cin >> toVom;
+				if (toVom == 1){
+					cout << "You manage to get out: Your face is very ni… (until) BLARHGAHGAHAGAHAGAHAGAHGAHGRAGHAGRAGGGAHRAGAGHARGH..." << endl;
+					cout << crush << " says: Oh my god. You poor thing. Let’s get you cleaned up." << endl;
+					cout << "Your crush walks you to the bathroom. They help you clean up your very not punk mess but tells you it’s okay." << endl;
+					cout << "You say: Thank you so much for being punk and accepting my slip up." << endl;
+					cout << "I’m actually v cool. I have 666 twitter followers that love my hilarious ironic passive aggressive tweets. I think you might too…" << crush << " will you follow me?" << endl;
+					cout << crush << " exclaims: I’d thought you’d never ask!" << endl;
+					cout << "You say: I wrote this song for you, want to hear it. Let’s skip this lame opener hahaha… losers." << endl;
+					cout << "You and " << crush << " leave the venue and you you find a guitar from that crust punk squat down the street you found out from that one guy you helped get that gig back in Denver that totally owes you a favor so it’s mad chill." << endl;
+					cout << crush << " loves the song. You love " << crush << "." << endl;
+					cout << "You both miss the rest of the show but in the wise words of Daniel Johnston, true love will find you in the end." << endl;
+					cout << "-End Scene-" << endl;
+				}
+				else{
+					cout << "You say: Hey what's up " << crush << "?" << endl;
+					cout << "You both are hitting it off really well." << endl;
+					cout << "Could this be the punk romance of your dreams? Is this what that Descendents song Silly Girl is all about?" << endl;
+					cout << "You say: I’m so glad I found my one true punk love." << endl;
+					cout << "I have 666 twitter followers that love my hilarious ironic passive aggressive tweets. I think you might too… " << crush << " will you follow me?" << endl;
+					cout << crush << " exclaims: I’d thought you’d never ask!" << endl;
+					cout << "You say: I wrote this song for you, want to hear it. Let’s skip this lame opener hahaha… losers." << endl;
+					cout << "You and " << crush << " leave the venue and you you find a guitar from that crust punk squat down the street you found out from that one guy you helped get that gig back in Denver that totally owes you a favor so it’s mad chill." << endl;
+					cout << crush << " loves the song. You love " << crush << "." << endl;
+					cout << "You both miss the rest of the show but in the wise words of The Dead Milkmen: " << endl;
+					cout << "Just you and me eat fudge banana swirl, just you and me we'll travel round the world, just you and me, punk rock girl." << endl;
+					cout << "-End Scene-" << endl;
+				}
+			}
+			else{
+				cout << "Well it isn’t a shock that since you wasted your day being a big wad of negative vibes man that the song you wrote for " << crush << " kinda sucks." << endl;
+				cout << "You got into a big fight with your homie " << pal << " and now you have to avoid them at the show tonight." << endl;
+				cout << "Guess you have to show up alone… loser." << endl;
+				cout << "So let’s hit the road." << endl;
+				cout << "You get to the venue. Going to shows solo may seem punk in concept but you look pretty lame right now." << endl;
+				cout << "OH SHOOT there’s " << crush << " looking all good and whatnot." << endl;
+				cout << "They say: Hey " << name << " what’s up?" << endl;
+				cout << "What do you do?" << endl;
+				cout << "Pick 1 to vomit on one’s self." << endl;
+				cout << "Pick 2 to play it supah cool." << endl;
+				cin >> toVom;
+				if (toVom == 1){
+					cout << "You manage to get out: Your face is very ni… (until) BLARHGAHGAHAGAHAGAHAGAHGAHGRAGHAGRAGGGAHRAGAGHARGH..." << endl;
+					cout << crush << " says: Oh my god. You poor thing. Let's get you cleaned up." << endl;
+					cout << "Your crush walks you to the bathroom. They help you clean up your very not punk mess but tells you it’s okay." << endl;
+					cout << "You say: Thank you so much for being punk and accepting my slip up." << endl;
+					cout << "I'm actually v cool. I have 666 twitter followers that love my hilarious ironic passive aggressive tweets. I think you might too… " << crush << " will you follow me?" << endl;
+					cout << crush << " exclaims: I'd thought you'd never ask!" << endl;
+					cout << "You say: I wrote this song for you, want to hear it?Let’s skip this lame opener hahaha… losers." << endl;
+					cout << "You and " << crush << " leave the venue and you you find a guitar from that crust punk squat down the street you found out from that one guy you helped get that gig back in Denver that totally owes you a favor so it’s mad chill." << endl;
+					cout << crush << " loves the song. You love " << crush << "." << endl;
+					cout << "You both miss the rest of the show but in the wise words of Daniel Johnston, true love will find you in the end." << endl;
+					cout << "-End Scene-" << endl;
+				}
+				else{
+					cout << "You say: Hey what’s up " << crush << "?" << endl;
+					cout << "You both are hitting it off really well." << endl;
+					cout << "Could this be the punk romance of your dreams? Is this what that Descendents song Silly Girl is all about?" << endl;
+					cout << "You say: I’m so glad I found my one true punk love." << endl;
+					cout << "I have 666 twitter followers that love my hilarious ironic passive aggressive tweets. I think you might too… " << crush << " will you follow me?" << endl;
+					cout << crush << " exclaims: I thought you’d never ask!" << endl;
+					cout << "You say: I wrote this song for you, want to hear it? Let’s skip this lame opener hahaha… losers." << endl;
+					cout << "You and " << crush << "leave the venue and you you find a guitar from that crust punk squat down the street you found out from that one guy you helped get that gig back in Denver that totally owes you a favor so it’s mad chill." << endl;
+					cout << crush << " loves the song. You love " << crush << "." << endl;
+					cout << "You both miss the rest of the show but in the wise words of The Dead Milkmen" << endl;
+					cout << "Just you and me eat fudge banana swirl, just you and me we'll travel round the world, just you and me, punk rock girl." << endl;
+					cout << "-End Scene-" << endl;
+				}
+			}
+		}
+		else{
+			cout << "You're late for the show... loser. But what else is new?" << endl;
+			cout << "You bolt for the front door - shoes untied. What's a shower anyway?" << endl;
+			cout << "You grab your metrocard and you sprint to the train." << endl;
+			cout << "Out of breath and in a complete huff, you get off the train and run the to the venue." << endl;
+			cout << "You're standing outside and can hear the openers finishing up inside." << endl;
+			cout << "They thank everyone for coming early and ask them to PLEASE stay for " << band << "." << endl;
+			cout << "As if anyone even knows who in tarnation this sucky opener is." << endl;
+			cout << "You walk up to the door, go to pull your ticket out and OH NO. You left all of your belongings at home." << endl;
+			cout << "If you weren't in such a rush from being late this wouldn't have happened." << endl;
+			cout << "There's the bouncer. What's your plan of action?" << endl;
+			cout << "Press 1 to use logic." << endl;
+			cout << "Press 2 to schmooze the bouncer with your charms." << endl;
+			cin >> bouncer;
+			if (bouncer == 1) {
+				cout << "You begin to explain what a C++ array is to the very large man at the door." << endl;
+				cout << "It seems a lot of his mass is not in his brain." << endl;
+				cout << "In his confusion, he becomes distracted." << endl;
+				cout << "You are able to slip by and get into the show." << endl;
+			}
+			else{
+				cout << "You make quite the pass at the bouncer." << endl;
+				cout << "He seems flattered and slips you his number on the back of a grimy guest list from last week's Nirvana cover band. He lets you through." << endl;
+			}
+			cout << "Your best friend " << pal << " is waiting for you at the door." << endl;
+			cout << "They say: What the heck took ya so long?" << endl;
+			cout << crush << " is here! And they're asking about you!" << endl;
+			cout << "You look like CRAP. Have you ever heard of a shower? I'll go tell them you're here!" << endl;
+			cout << "Uh oh, " << name << ". Looks like you've got yourself in a pickle. What are you going to do?" << endl;
+			cout << "Press 1 to stay and wait for " << crush << "." << endl;
+			cout << " Press 2 to conveniently need to go see that kid from the second grade you traded Pokemon cards with who just so happens to be on the other side of the room" << endl;
+			cin >> crushdecision1;
+			if (crushdecision1 == 1){
+				cout << crush << " sees you and starts to run over." << endl;
+				cout << "They begin to make a funny face as they come close. They ask: do you smell that?" << endl;
+				cout << "You begin to panic. You are completely aware that the shirt you are wearing has been on your body for the last five days." << endl;
+				cout << "It's finals week at Stevens. Everyone as school understands but this babe this not going to." << endl;
+				cout << "They're picking up on the fact that you're the cause of the smell." << endl;
+				cout << "They say: Oh my it's been nice to see you but I just remembered that my long lost cousin Rebecca has just arrived at the front door. G2G. LOL. Sorry. BRB. TTYL. Haha." << endl;
+				cout << crush << " will never love you now. What have you done " << name << "???" << endl;
+			}
+			else{
+				cout << "You quickly go meet that pokemon friend who also happens to not exist because honestly who ever traded Pokemon cards with you... loser" << endl;
+				cout << "You've managed to avoid your crush." << crush << "will never have to smell you." << endl;
+			}
+			cout << "Well that was a complete disaster. But at least " << band << " is about to go on." << endl;
+			cout << "There is your idol. On stage. In front of you. You can't believe it." << endl;
+			cout << "We all know you're freaking out on the inside because this is actually only your second concert if we count that Christmas show your mom dragged you to at the local theater... loser." << endl;
+			cout << "You go so hard in the pit. You sing every song and know all the words." << endl;
+			cout << "Who knew that person from freshman year high school could provoke such strong emotions about your friends and pizza?" << endl;
+			cout << "The set's about to be over." << endl;
+			cout << "You have to meet the lead singer of " << band << " otherwise you won't be able to go on." << endl;
+			cout << "You see them get off stage and go back to the dressing room." << endl;
+			cout << "A line is queueing up at the dressing room door." << endl;
+			cout << "You've been feeling your inner angst for the first time and you are wondering if you should act on it." << endl;
+			cout << "Do you want to get in line and maybe see your favorite musician?" << endl;
+			cout << "Or do you want to go sneak around the back and wait by the van by pretending to be venue staff?" << endl;
+			cout << "Press 1 to wait, press 2 to sneak." << endl;
+			cin >> meetBand;
+			if (meetBand == 1){
+				cout << "You're next in line. Oh man, this is it." << endl;
+				cout << "The person in front of you goes in. UH OH. ARE YOU READY!" << endl;
+				cout << "But it doesn't matter how ready you are. Just then the security says: That's it folks. No more visits." << endl;
+				cout << "UGH. You're devastated. How could this happen." << endl;
+				cout << "You've messed up with " << crush << ". You messed up with " << band << "." << endl;
+				cout << "How will you be able to show your face in programming lab with " << crush << " on Monday." << endl;
+				cout << "You're the worst." << endl;
+				cout << "You're the least punk person to ever use this code... and that says something because we wrote it." << endl;
+				cout << "You leave the venue. You're sure you're going to cry. No money for a train... no money for a cab... you're going to walk three hours to get home..." << endl;
+				cout << "Or so you think..." << endl;
+				cout << "In the distance you here and engine not turning over. Sounds like a job for an engineer... know what I'm saying." << endl;
+				cout << "Maybe you can ask for train money if you fix it. Sounds like this night isn't going the absolute worst." << endl;
+				cout << "You see the white van... you're honestly pretty scared but also pretty desperate so you approach it." << endl;
+				cout << "Hey folks, I’m an engineer. I just finished Design 1 so I’m pretty much an expert with these things." << endl;
+				cout << "If you want me to… AHHHHHHH IT’S YOU. HOW I AM. WHAT AM I. AAAAHHHHH!" << endl;
+				cout << "They say: Well aren't you an excited one. You think you can fix our oh so typical punx probs? Ugh, tour am I right." << endl;
+				cout << "You rapidly agree and put your oh so intact GPA to work as you problem solve your way through this." << endl;
+				cout << "With a matter of tinkers and tankers the engine starts up and the van is a-go." << endl;
+				cout << band << "ask if you need a ride home." << endl;
+				cout << "DEFINITELY A HELL DOUBLE YEAH." << endl;
+				cout << "The band drives you home and you spark up some conversation when your favorite member mentions their dog." << endl;
+				cout << "They ask: Hey do you like dogs?" << endl;
+				if (dog == 1){
+					cout << "Since you LOVE dogs, they ask you to be an honorary member and go on tour with them." << endl;
+					cout << "WHAAAAAAT. SEE YA L8ER STEVENS. YOU'RE GOIN' ON TOUR!!" << endl;
+					cout << "-End Scene-" << endl;
+					cout << "Congrats on being relatively punk for the loser you are. You win this round. But you might be so lucky the next time. MWAHAHAHAHAH." << endl;
+				}
+
+				else{
+					cout << "Since you don't share opinions with your favorite band the rest of the ride is pretty quiet." << endl;
+					cout << "But also because they're really punk, they respect your opinion and don't subtweet you later." << endl;
+					cout << "-End Scene-" << endl;
+					cout << "You're not that punk. You lose this round. But you might be luckier the next time. lol. probably not." << endl;
+				}
+			}
+
+
+		else{
+			cout << "You slink out the back door and see their van in the distance." << endl;
+			cout << "They’re all climbing in but you’re getting nervous." << endl;
+			cout << "You think maybe you'll just stay hidden… what’s the use, you know?" << endl;
+			cout << "But then… you hear their engine not rolling over." << endl;
+			cout << "Oh Gosh this is your chance. It’s not just everyday an expert from Design 1 falls into the right place at the right time with their idols." << endl;
+			cout << "You book it over there right away." << endl;
+			cout << "You scramble to say: Hey everybody. I’m " << name << " and I was just at the show and I can totally fix your van, I’m an engineer." << endl;
+			cout << "They say: Well this is pretty convenient. You think you can fix our typical punx probs? Ugh, tour am I right." << endl;
+			cout << "You rapidly agree and put your oh so intact GPA to work as you problem solve your way through this." << endl;
+			cout << "With a matter of a few tinkers and tankers the engine starts up and the van is a-go." << endl;
+			cout << band << " ask if you need a ride home." << endl;
+			cout << "DEFINITELY A HELL DOUBLE YEAH." << endl;
+			cout << "The band drives you home and you spark up some conversation when your favorite member mentions their dog." << endl;
+			cout << "They ask: Hey do you like dogs?" << endl;
+				if (dog == 1){
+				cout << "Since you LOVE dogs, they ask you to be an honorary member and go on tour with them." << endl;
+				cout << "WHAAAAAAT. SEE YA L8ER STEVENS. YOU'RE GOIN' ON TOUR!!" << endl;
+				cout << "-End Scene-" << endl;
+				cout << "Congrats on being relatively punk for the loser you are. You win this round. But you might be so lucky the next time. MWAHAHAHAHAH." << endl;
+				}
+				else{
+				cout << "Since you don't share opinions with your favorite band the rest of the ride is pretty quiet." << endl;
+				cout << "But also since they're really punk, they respect your opinion and won't subtweet you later." << endl;
+				cout << "-End Scene-" << endl;
+				cout << "You're not that punk. You lose this round. But you might be luckier the next time. lol. probably not." << endl;
+			}
+		}
+	}
+
+}
+		};
+
+
+		int main() {
+			int choice;
+			musicQuiz var;
+
+
+			while (1) {
+				cout << "Welcome to Punk Buzzfeed." << endl;
+				cout << "Press 1 for a song recommendation." << endl;
+				cout << "Press 2 to find out how punk you are." << endl;
+				cout << "Press 3 for Punk RPG" << endl;
+				cout << "Press anything else to quit" << endl;
+				cin >> choice;
+
+				switch (choice){
+				case 1:
+					var.quizOne();
+					break;
+				case 2:
+					var.quizTwo();
+					break;
+				case 3:
+					var.RPG();
+					break;
+				default: cout << "Rock on." << endl;
+					exit(1);
+				}
+
+			}
+			
+			return 1;
+		}
